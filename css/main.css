@@ -419,9 +419,41 @@ body {
   bottom: 0;
   background: url(../img/side_bg.png) center bottom no-repeat, linear-gradient(24.96deg, #7321E8 25.46%, #EAAAFA 88.49%);
   border-radius: 0px 16px 16px 0px;
+  padding: 40px;
+}
+
+.logo {
+  display: block;
+  width: 218px;
+  height: 48px;
+  background: url(../img/logo.svg) center center no-repeat;
+}
+
+.app-group {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.app {
+  display: block;
+  width: 240px;
+  height: 48px;
+}
+.app_play {
+  background: url(../img/btn_app_white.png) center center no-repeat;
+  margin-bottom: 8px;
+}
+.app_app {
+  background: url(../img/btn_pla_white.png) center center no-repeat;
+}
+
+.main {
+  padding: 40px 0 0 320px;
 }
 
 .container {
-  width: 1180px;
+  width: 1160px;
   margin: 0 auto;
+  background: url(../img/page_bg.png) center top no-repeat;
 }/*# sourceMappingURL=main.css.map */
