@@ -154,7 +154,6 @@ table th, table td {
   box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
   -khtml-user-select: none;
@@ -479,10 +478,97 @@ hr {
   background: url(../img/page_bg.png) left top/100% no-repeat;
 }
 
+.user {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+.user__nick {
+  padding: 0px 16px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 60px;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "demi", sans-serif;
+  align-items: center;
+  display: flex;
+  margin-bottom: 24px;
+}
+.user__main {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.user__follow {
+  width: 33.333%;
+  display: flex;
+  justify-content: flex-start;
+}
+.user__follow_right {
+  justify-content: flex-end;
+}
+.user__follow-count {
+  font-size: 24px;
+  line-height: 29px;
+  font-family: "bold", sans-serif;
+  margin-bottom: 8px;
+}
+.user__follow-label {
+  opacity: 0.6;
+  font-family: "medium", sans-serif;
+}
+.user__follow-inner {
+  text-align: center;
+}
+.user__ava {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+}
+.user__ava_online {
+  position: relative;
+}
+.user__ava_online:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  bottom: -3px;
+  right: -3px;
+  background: #27D34C;
+}
+.user__pic {
+  border-radius: 32px;
+}
+.user__name {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: "demi", sans-serif;
+  margin-bottom: 16px;
+}
+.user__verified {
+  margin-left: 8px;
+}
+.user__about {
+  text-align: center;
+  padding: 0 40px;
+}
 .user__action {
   display: flex;
   gap: 8px;
   margin: 40px 0;
+  width: 100%;
+  padding: 0 40px;
 }
 .user__action .btn {
   font-family: "demi", sans-serif;
@@ -552,9 +638,22 @@ hr {
 .btn_light:disabled svg {
   stroke: #939AAE !important;
 }
+.btn_light-inactive {
+  background: rgba(147, 154, 174, 0.1);
+  color: #939AAE;
+}
+.btn_light-inactive:hover {
+  background: #F9E6FE;
+  box-shadow: 0px 16px 32px rgba(183, 115, 237, 0.15);
+  color: #7321E8;
+}
+
 .tab {
   display: flex;
   gap: 8px;
+  width: 100%;
+  padding: 0 40px;
+  margin-bottom: 40px;
 }
 .tab .btn {
   flex: 0 0 calc(25% - 6px);

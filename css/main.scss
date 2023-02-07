@@ -96,21 +96,96 @@ hr{
     background: url(../img/page_bg.png) left top / 100% no-repeat;
 }
 .user {
-    &__nick {}
-    &__main {}
-    &__follow {}
-    &__follow-count {}
-    &__ava {
-      &_online {}
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    &__nick {
+        padding: 0px 16px;
+        height: 40px;
+        background: #FFFFFF;
+        border-radius: 60px;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: $f700;
+        align-items: center;
+        display: flex;
+        margin-bottom: 24px;
     }
-    &__pic {}
-    &__name {}
-    &__verified {}
-    &__about {}
+    &__main {
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+    &__follow {
+        width: 33.333%;
+        display: flex;
+        justify-content: flex-start;
+        &_right{
+            justify-content: flex-end;
+        }
+    }
+    &__follow-count {
+        font-size: 24px;
+        line-height: 29px;
+        font-family: $f750;
+        margin-bottom: 8px;
+    }
+    &__follow-label{
+        opacity: 0.6;
+        font-family: $f450;
+    }
+    &__follow-inner {
+        text-align: center;
+    }
+    &__ava {
+        width: 120px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+
+      &_online {
+        position: relative;
+        &:after{
+            display: block;
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            bottom: -3px;
+            right: -3px;
+            background: #27D34C;
+        }
+      }
+    }
+    &__pic {
+        border-radius: 32px;
+    }
+    &__name {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        line-height: 29px;
+        font-family: $f700;
+        margin-bottom: 16px;
+    }
+    &__verified {
+        margin-left: 8px;
+    }
+    &__about {
+        text-align: center;
+        padding: 0 40px;
+    }
     &__action {
         display: flex;
         gap: 8px;
         margin: 40px 0;
+        width: 100%;    
+        padding: 0 40px;
         .btn{
             font-family: $f700;
             flex: 0 0 calc(50% - 4px);
@@ -132,7 +207,6 @@ hr{
     transition: $transition;
     border: 0;
     padding: 0;
-    
     &:hover{
         background: linear-gradient(41.19deg, #7321E8 9.55%, #EAAAFA 95.15%);
         box-shadow: 0px 16px 32px rgba(115, 33, 232, 0.25);
@@ -180,11 +254,22 @@ hr{
             }
         }
     }
-    &_light-inactive {}
+    &_light-inactive {
+        background: rgba(147, 154, 174, 0.1);
+        color: #939AAE;
+        &:hover{
+            background: #F9E6FE;
+            box-shadow: 0px 16px 32px rgba(183, 115, 237, 0.15);
+            color: #7321E8;
+        }
+    }
 }
 .tab {
     display: flex;
     gap: 8px;
+    width: 100%;    
+    padding: 0 40px;
+    margin-bottom: 40px;
     .btn{
         flex: 0 0 calc(25% - 6px);
     }
