@@ -34,7 +34,6 @@ body {
     color: $text-color;
     font-size: 18px;
     line-height: 22px;
-
 }
 .aside{
     position: fixed;
@@ -348,9 +347,12 @@ hr{
     bottom: 0;
     left: 0;
     background: rgba(25, 31, 50, 0.8);
-    transition: $transition;
+    transition: $transition1;
     opacity: 0;
     visibility: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 17px;
     &.vis{
         opacity: 1;
         visibility: visible;
@@ -360,10 +362,19 @@ hr{
     width: 640px;
     background: #fff url(../img/modal_bg.png) center top no-repeat;
     top: 50%;
-    left: 50%;
+    left: calc(50% - 17px);
     transform: translate(-50%,-50%);
     border-radius: 16px; 
-    position: absolute;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    //transition: $transition1;
+    &.vis{
+        opacity: 1;
+        visibility: visible;
+    }
     &_btn {
         width: calc(50% - 8px);
         height: 48px;
