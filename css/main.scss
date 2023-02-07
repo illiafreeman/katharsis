@@ -275,10 +275,32 @@ hr{
     }
 }
 .post {
-    &__pic {}
-    &__action {}
-    &__action-group {}
-    &__btn {}
+    &__pic {
+        border-radius: 16px;
+    }
+    &__action {
+        margin: 18px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__action-group {
+        display: flex;
+        align-items: center;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        margin-left: 18px;
+        &:first-child{
+            margin-left: 0;
+        }
+        svg{
+            width: 24px;
+            height: 24px;
+            fill: #939AAE;
+            margin-right: 10px;
+        }
+    }
     &__text {}
     &__all {}
 }

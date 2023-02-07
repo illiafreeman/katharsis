@@ -657,4 +657,31 @@ hr {
 }
 .tab .btn {
   flex: 0 0 calc(25% - 6px);
+}
+
+.post__pic {
+  border-radius: 16px;
+}
+.post__action {
+  margin: 18px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.post__action-group {
+  display: flex;
+  align-items: center;
+}
+.post__btn {
+  display: flex;
+  align-items: center;
+  margin-left: 18px;
+}
+.post__btn:first-child {
+  margin-left: 0;
+}
+.post__btn svg {
+  width: 24px;
+  height: 24px;
+  fill: #939AAE;
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */
