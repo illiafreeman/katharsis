@@ -110,6 +110,7 @@ hr{
     &__action {
         display: flex;
         gap: 8px;
+        margin: 40px 0;
         .btn{
             font-family: $f700;
             flex: 0 0 calc(50% - 4px);
@@ -129,6 +130,24 @@ hr{
     font-family: $f450;
     cursor: pointer;
     transition: $transition;
+    border: 0;
+    padding: 0;
+    &:hover{
+        background: linear-gradient(41.19deg, #7321E8 9.55%, #EAAAFA 95.15%);
+        box-shadow: 0px 16px 32px rgba(115, 33, 232, 0.25);
+    }
+    &:active{
+        background: linear-gradient(41.19deg, #571BAD 9.55%, #CF95DD 95.15%);
+        color: #fff;
+    }
+    &:focus{
+        color: #fff;
+    }
+    &:disabled{
+        background: linear-gradient(41.19deg, rgba(115, 33, 232, 0.5) 9.55%, rgba(234, 170, 250, 0.5) 95.15%);
+        box-shadow: none;
+        cursor: not-allowed;
+    }
     svg{
         width: 20px;
         height: 20px;
@@ -139,6 +158,26 @@ hr{
         background: #F9E6FE;
         color: #7321E8;
         stroke: #7321E8 !important;
+        &:hover{
+            background: #F9E6FE;
+            box-shadow: 0px 16px 32px rgba(183, 115, 237, 0.15);
+        }
+        &:active{
+            background: rgba(212, 111, 237, 0.3);
+            color: #7321E8;
+        }
+        &:focus{
+            color: #7321E8;
+        }
+        &:disabled{
+            background: rgba(147, 154, 174, 0.1);
+            box-shadow: none;
+            cursor: not-allowed;
+            color: #939AAE;
+            svg{
+                stroke: #939AAE !important;
+            }
+        }
     }
     &_light-inactive {}
 }

@@ -482,6 +482,7 @@ hr {
 .user__action {
   display: flex;
   gap: 8px;
+  margin: 40px 0;
 }
 .user__action .btn {
   font-family: "demi", sans-serif;
@@ -501,6 +502,24 @@ hr {
   font-family: "medium", sans-serif;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  border: 0;
+  padding: 0;
+}
+.btn:hover {
+  background: linear-gradient(41.19deg, #7321E8 9.55%, #EAAAFA 95.15%);
+  box-shadow: 0px 16px 32px rgba(115, 33, 232, 0.25);
+}
+.btn:active {
+  background: linear-gradient(41.19deg, #571BAD 9.55%, #CF95DD 95.15%);
+  color: #fff;
+}
+.btn:focus {
+  color: #fff;
+}
+.btn:disabled {
+  background: linear-gradient(41.19deg, rgba(115, 33, 232, 0.5) 9.55%, rgba(234, 170, 250, 0.5) 95.15%);
+  box-shadow: none;
+  cursor: not-allowed;
 }
 .btn svg {
   width: 20px;
@@ -512,6 +531,26 @@ hr {
   background: #F9E6FE;
   color: #7321E8;
   stroke: #7321E8 !important;
+}
+.btn_light:hover {
+  background: #F9E6FE;
+  box-shadow: 0px 16px 32px rgba(183, 115, 237, 0.15);
+}
+.btn_light:active {
+  background: rgba(212, 111, 237, 0.3);
+  color: #7321E8;
+}
+.btn_light:focus {
+  color: #7321E8;
+}
+.btn_light:disabled {
+  background: rgba(147, 154, 174, 0.1);
+  box-shadow: none;
+  cursor: not-allowed;
+  color: #939AAE;
+}
+.btn_light:disabled svg {
+  stroke: #939AAE !important;
 }
 .tab {
   display: flex;
