@@ -467,11 +467,14 @@ hr {
 }
 
 .main {
-  padding: 40px 0 0 320px;
+  padding: 40px 40px 40px 360px;
 }
 
 .container {
-  width: 1160px;
+  width: 640px;
   margin: 0 auto;
-  background: url(../img/page_bg.png) center top no-repeat;
+}
+
+.page {
+  background: url(../img/page_bg.png) left top/100% no-repeat;
 }/*# sourceMappingURL=main.css.map */
