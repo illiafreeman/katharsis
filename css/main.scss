@@ -58,9 +58,9 @@ body {
     left: 40px;
 }
 .app {
-    display: block;
     width: 240px;
     height: 48px;
+    cursor: pointer;
     &_play {
         background: url(../img/btn_app_white.png) center center no-repeat;
         margin-bottom: 8px;
@@ -69,7 +69,22 @@ body {
         background: url(../img/btn_pla_white.png) center center no-repeat;
     }
 }
-
+.login {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-family: $f450;
+    cursor: pointer;
+    margin: 200px 0 32px;
+    &__icon{
+        margin-right: 8px;
+    }
+}
+hr{
+    border: 0;
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+}
 .main{
     padding: 40px 0 0 320px;
 }

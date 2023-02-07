@@ -436,9 +436,9 @@ body {
 }
 
 .app {
-  display: block;
   width: 240px;
   height: 48px;
+  cursor: pointer;
 }
 .app_play {
   background: url(../img/btn_app_white.png) center center no-repeat;
@@ -446,6 +446,24 @@ body {
 }
 .app_app {
   background: url(../img/btn_pla_white.png) center center no-repeat;
+}
+
+.login {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  font-family: "medium", sans-serif;
+  cursor: pointer;
+  margin: 200px 0 32px;
+}
+.login__icon {
+  margin-right: 8px;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #fff;
+  opacity: 0.5;
 }
 
 .main {
