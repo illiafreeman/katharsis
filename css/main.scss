@@ -206,7 +206,7 @@ hr{
     cursor: pointer;
     transition: $transition;
     border: 0;
-    padding: 0;
+    padding: 0 40px;
     &:hover{
         background: linear-gradient(41.19deg, #7321E8 9.55%, #EAAAFA 95.15%);
         box-shadow: 0px 16px 32px rgba(115, 33, 232, 0.25);
@@ -263,6 +263,10 @@ hr{
             color: #7321E8;
         }
     }
+    &_center{
+        display: inline-flex;
+        margin: 0 auto;
+    }
 }
 .tab {
     display: flex;
@@ -291,6 +295,10 @@ hr{
         display: flex;
         align-items: center;
         margin-left: 18px;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: $f450;
+        cursor: pointer;
         &:first-child{
             margin-left: 0;
         }
@@ -298,11 +306,40 @@ hr{
             width: 24px;
             height: 24px;
             fill: #939AAE;
-            margin-right: 10px;
+            transition: $transition;
+        }
+        span{
+            padding-left: 6px;
+        }
+        &:hover{
+            svg{
+                fill: #7321E8;
+            }
+        }
+        &_co{
+            svg{
+                width: 20px;
+                height: 20px;
+            }
         }
     }
-    &__text {}
-    &__all {}
+    &__text {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 16px;
+    }
+    &__all {
+        font-size: 16px;
+        line-height: 20px;
+        color: #939AAE !important;
+        transition: $transition;
+        font-family: $f450;
+        margin-bottom: 56px;
+        display: inline-block;
+        &:hover{
+            color: $text-color !important;
+        }
+    }
 }
 
 

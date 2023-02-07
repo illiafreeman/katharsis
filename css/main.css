@@ -589,7 +589,7 @@ hr {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   border: 0;
-  padding: 0;
+  padding: 0 40px;
 }
 .btn:hover {
   background: linear-gradient(41.19deg, #7321E8 9.55%, #EAAAFA 95.15%);
@@ -647,6 +647,10 @@ hr {
   box-shadow: 0px 16px 32px rgba(183, 115, 237, 0.15);
   color: #7321E8;
 }
+.btn_center {
+  display: inline-flex;
+  margin: 0 auto;
+}
 
 .tab {
   display: flex;
@@ -675,6 +679,10 @@ hr {
   display: flex;
   align-items: center;
   margin-left: 18px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "medium", sans-serif;
+  cursor: pointer;
 }
 .post__btn:first-child {
   margin-left: 0;
@@ -683,5 +691,32 @@ hr {
   width: 24px;
   height: 24px;
   fill: #939AAE;
-  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.post__btn span {
+  padding-left: 6px;
+}
+.post__btn:hover svg {
+  fill: #7321E8;
+}
+.post__btn_co svg {
+  width: 20px;
+  height: 20px;
+}
+.post__text {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+.post__all {
+  font-size: 16px;
+  line-height: 20px;
+  color: #939AAE !important;
+  transition: all 0.2s ease-in-out;
+  font-family: "medium", sans-serif;
+  margin-bottom: 56px;
+  display: inline-block;
+}
+.post__all:hover {
+  color: #191F32 !important;
 }/*# sourceMappingURL=main.css.map */
