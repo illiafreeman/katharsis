@@ -25,6 +25,11 @@
 }
 .oh {
   overflow: hidden;
+  padding-right: 18px;
+}
+
+.oh {
+  overflow: hidden;
 }
 
 .ac {
@@ -719,4 +724,74 @@ hr {
 }
 .post__all:hover {
   color: #191F32 !important;
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(25, 31, 50, 0.8);
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-bg.vis {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  width: 640px;
+  background: #fff url(../img/modal_bg.png) center top no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  position: absolute;
+}
+.modal_btn {
+  width: calc(50% - 8px);
+  height: 48px;
+}
+.modal_btn-app {
+  background: url(../img/btn_app.png) center center no-repeat;
+}
+.modal_btn-pla {
+  background: url(../img/btn_pla.png) center center no-repeat;
+}
+.modal__body {
+  padding: 56px 72px;
+}
+.modal__logo {
+  display: block;
+  background: url(../img/logo_color.png) center center no-repeat;
+  width: 218px;
+  height: 48px;
+  margin: 0 auto 32px;
+}
+.modal__desc {
+  font-family: "medium", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  width: 300px;
+  margin-bottom: 32px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.modal__action {
+  display: flex;
+  gap: 16px;
+}
+.modal__close {
+  width: 48px;
+  height: 48px;
+  background: #fff url(../img/close.svg) center center no-repeat;
+  border-radius: 16px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
