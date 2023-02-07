@@ -477,4 +477,46 @@ hr {
 
 .page {
   background: url(../img/page_bg.png) left top/100% no-repeat;
+}
+
+.user__action {
+  display: flex;
+  gap: 8px;
+}
+.user__action .btn {
+  font-family: "demi", sans-serif;
+  flex: 0 0 calc(50% - 4px);
+}
+
+.btn {
+  background: linear-gradient(41.19deg, #7321E8 9.55%, #EAAAFA 95.15%);
+  border-radius: 16px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "medium", sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  margin-right: 8px;
+}
+.btn_light {
+  background: #F9E6FE;
+  color: #7321E8;
+  stroke: #7321E8 !important;
+}
+.tab {
+  display: flex;
+  gap: 8px;
+}
+.tab .btn {
+  flex: 0 0 calc(25% - 6px);
 }/*# sourceMappingURL=main.css.map */

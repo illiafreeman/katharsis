@@ -95,5 +95,68 @@ hr{
 .page{
     background: url(../img/page_bg.png) left top / 100% no-repeat;
 }
+.user {
+    &__nick {}
+    &__main {}
+    &__follow {}
+    &__follow-count {}
+    &__ava {
+      &_online {}
+    }
+    &__pic {}
+    &__name {}
+    &__verified {}
+    &__about {}
+    &__action {
+        display: flex;
+        gap: 8px;
+        .btn{
+            font-family: $f700;
+            flex: 0 0 calc(50% - 4px);
+        }
+    }
+}
+.btn {
+    background: linear-gradient(41.19deg, #7321E8 9.55%, #EAAAFA 95.15%);
+    border-radius: 16px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: $f450;
+    cursor: pointer;
+    transition: $transition;
+    svg{
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+        margin-right: 8px;
+    }
+    &_light {
+        background: #F9E6FE;
+        color: #7321E8;
+        stroke: #7321E8 !important;
+    }
+    &_light-inactive {}
+}
+.tab {
+    display: flex;
+    gap: 8px;
+    .btn{
+        flex: 0 0 calc(25% - 6px);
+    }
+}
+.post {
+    &__pic {}
+    &__action {}
+    &__action-group {}
+    &__btn {}
+    &__text {}
+    &__all {}
+}
+
 
 @import '_query';
