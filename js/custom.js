@@ -15,6 +15,10 @@ $(document).ready(function () {
         $('.modal').addClass('vis');
     }
     $('.btn, .login, .post__btn, .post__all').click(modal);
+    $('.post__more').click(function() {
+        $(this).parent().addClass('full');
+        $(this).remove();
+    });
 });
 
 
