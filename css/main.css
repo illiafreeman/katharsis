@@ -941,7 +941,7 @@ hr {
     position: relative;
   }
   .post__text.full {
-    -webkit-line-clamp: none;
+    -webkit-line-clamp: initial;
   }
   .post__all {
     padding: 0 15px;

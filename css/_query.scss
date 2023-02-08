@@ -106,7 +106,7 @@
         -webkit-line-clamp: 3; 
         position: relative;
         &.full{
-            -webkit-line-clamp: none; 
+            -webkit-line-clamp: initial; 
         }
     }
     .post__all{
