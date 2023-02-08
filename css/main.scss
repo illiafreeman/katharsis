@@ -456,12 +456,12 @@ hr{
     }
     &__head-title {
         display: flex;
-        gap: 16px;
     }
     &__head-ava {
         width: 40px;
         height: 40px;
         border-radius: 12px;
+        margin-right: 16px;
     }
     &__head-info {}
     &__head-nick {

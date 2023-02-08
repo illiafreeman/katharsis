@@ -843,12 +843,12 @@ hr {
 }
 .post__head-title {
   display: flex;
-  gap: 16px;
 }
 .post__head-ava {
   width: 40px;
   height: 40px;
   border-radius: 12px;
+  margin-right: 16px;
 }
 .post__head-nick {
   display: flex;
