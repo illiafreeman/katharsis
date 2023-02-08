@@ -407,6 +407,10 @@ table th, table td {
   color: black;
 }
 
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   font-family: "regular", sans-serif;
   color: #191F32;

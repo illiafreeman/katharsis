@@ -28,7 +28,9 @@
 @import '_help';
 @import '_slick';
 @import '_slick-theme';
-
+html{
+    -webkit-tap-highlight-color: transparent;
+}
 body {
     font-family: $f400;
     color: $text-color;
