@@ -36,7 +36,9 @@
     .page{
         border-radius: 16px 16px 0px 0px;
     }
-    
+    .post{
+        margin-bottom: 40px;
+    }
     .post__pic {
         border-radius: 0;
     }
@@ -57,7 +59,6 @@
     }
     .post__all{
         padding: 0 15px;
-        margin-bottom: 40px;
     }
     .post__more{
         display: block;

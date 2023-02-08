@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    setTimeout(function() { 
+    /*setTimeout(function() { 
          $('body').addClass('oh');
          $('.modal-bg').addClass('vis');
          $('.modal').addClass('vis');
@@ -18,11 +18,16 @@ $(document).ready(function () {
     $('.post__more').click(function() {
         $(this).parent().addClass('full');
         $(this).remove();
-    });
+    });*/
 
     let elem = document.querySelector('.post__all');
     elem.addEventListener('click', function(event) {
         event.preventDefault();
+    });
+    $('.slider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
     });
 });
 

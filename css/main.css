@@ -684,6 +684,9 @@ hr {
   margin: 0;
 }
 
+.post {
+  margin-bottom: 56px;
+}
 .post__pic {
   border-radius: 16px;
 }
@@ -735,7 +738,6 @@ hr {
   color: #939AAE !important;
   transition: all 0.2s ease-in-out;
   font-family: "medium", sans-serif;
-  margin-bottom: 56px;
   display: inline-block;
 }
 .post__all:hover {
@@ -894,6 +896,102 @@ hr {
   display: none;
 }
 
+.slick-prev, .slick-next {
+  padding: 0;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background: rgba(245, 245, 247, 0.2);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+}
+.slick-prev svg, .slick-next svg {
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s ease-in-out;
+  fill: #fff;
+}
+.slick-prev:before, .slick-prev:after, .slick-next:before, .slick-next:after {
+  display: none;
+}
+.slick-prev:hover, .slick-next:hover {
+  background: rgba(245, 245, 247, 0.5);
+}
+.slick-next {
+  right: 16px;
+}
+.slick-next svg {
+  transform: rotate(180deg);
+}
+.slick-next:hover svg {
+  transform: rotate(180deg) translateX(-3px);
+}
+
+.slick-prev {
+  left: 16px;
+}
+.slick-prev:hover svg {
+  transform: translateX(-3px);
+}
+
+.slick-list {
+  border-radius: 16px;
+}
+
+.slick-dots {
+  bottom: 16px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  border-radius: 8px;
+}
+
+.slick-dots li button {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+}
+
+.slick-dots li button::before {
+  display: none;
+}
+
+.slick-dots {
+  width: auto;
+  height: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+}
+.slick-dots li {
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  margin: 0 4px;
+}
+.slick-dots li button {
+  width: 4px;
+  height: 4px;
+  padding: 0;
+}
+.slick-dots li.slick-active {
+  width: 8px;
+  height: 8px;
+}
+.slick-dots li.slick-active button {
+  width: 8px;
+  height: 8px;
+  background: rgb(255, 255, 255);
+}
+
 @media only screen and (max-width: 1100px) {
   .aside {
     position: fixed;
@@ -932,6 +1030,9 @@ hr {
   .page {
     border-radius: 16px 16px 0px 0px;
   }
+  .post {
+    margin-bottom: 40px;
+  }
   .post__pic {
     border-radius: 0;
   }
@@ -952,7 +1053,6 @@ hr {
   }
   .post__all {
     padding: 0 15px;
-    margin-bottom: 40px;
   }
   .post__more {
     display: block;

@@ -294,6 +294,7 @@ hr{
     }
 }
 .post {
+    margin-bottom: 56px;
     &__pic {
         border-radius: 16px;
     }
@@ -349,7 +350,6 @@ hr{
         color: #939AAE !important;
         transition: $transition;
         font-family: $f450;
-        margin-bottom: 56px;
         display: inline-block;
         &:hover{
             color: $text-color !important;
@@ -509,4 +509,144 @@ hr{
 .post__more{
     display: none;
 }
+.slick-prev, .slick-next{
+    padding: 0;
+    border: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background: rgba(245, 245, 247, 0.2);
+    backdrop-filter: blur(1px);
+    border-radius: 12px;
+    transition: $transition;
+    svg{
+        width: 24px;
+        height: 24px;
+        transition: $transition;
+        fill: #fff;
+    }
+    
+    &:before, &:after{
+        display: none;
+    }
+    &:hover{
+        background: rgba(245, 245, 247, 0.5);
+        svg{
+            
+        }
+    }
+}
+.slick-next{
+    right: 16px;
+    svg{
+        transform: rotate(180deg);
+    }
+    &:hover{
+        svg{
+            transform: rotate(180deg) translateX(-3px);
+        }
+    }
+}
+.slick-prev{
+    left: 16px;
+    &:hover{
+        svg{
+            transform: translateX(-3px);
+        }
+    }
+}
+.slick-list{
+    border-radius: 16px;
+}
+.slick-dots {
+    bottom: 16px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
+    border-radius: 8px;
+}
+.slick-dots li button{
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+}
+.slick-dots li button::before{
+    display: none;
+}
+.slick-dots{
+    width: auto;
+    height: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    li{
+        width: 4px;
+        height: 4px;
+        padding: 0;
+        margin: 0 4px;
+        button{
+            width: 4px;
+            height: 4px;
+            padding: 0;
+        }
+        &.slick-active{
+            width: 8px;
+            height: 8px;
+            button{
+                width: 8px;
+                height: 8px;
+                background: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import '_query';
