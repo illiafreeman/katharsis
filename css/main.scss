@@ -60,12 +60,15 @@ body {
     width: 240px;
     height: 48px;
     cursor: pointer;
+    transition: $transition;
     &_play {
         background: url(../img/btn_app_white.png) center center no-repeat;
         margin-bottom: 8px;
     }
     &_app {
         background: url(../img/btn_pla_white.png) center center no-repeat;
+    }
+    &:hover{
     }
 }
 .login {
@@ -378,12 +381,12 @@ hr{
     &_btn {
         width: calc(50% - 8px);
         height: 48px;
+        transition: $transition;
+        &:hover{
+        }
     }
     &_btn-app {
         background: url(../img/btn_app.png) center center no-repeat;
-        &:hover{
-
-        }
     }
     &_btn-pla {
         background: url(../img/btn_pla.png) center center no-repeat;
@@ -423,7 +426,8 @@ hr{
         cursor: pointer;
     }
 }
-.btn {
+.btn_head{
+    display: none;
 }
 
 
