@@ -64,6 +64,7 @@ body {
     border-radius: 16px;
     cursor: pointer;
     transition: $transition;
+    display: block;
     &_play {
         background: url(../img/btn_app_white.png) center center no-repeat;
         margin-bottom: 8px;
@@ -145,6 +146,7 @@ hr{
     }
     &__follow-inner {
         text-align: center;
+        cursor: pointer;
     }
     &__ava {
         width: 120px;
@@ -188,13 +190,17 @@ hr{
     }
     &__action {
         display: flex;
-        gap: 8px;
+        
         margin: 40px 0;
         width: 100%;    
         padding: 0 40px;
         .btn{
             font-family: $f700;
             flex: 0 0 calc(50% - 4px);
+            margin-right: 8px;
+            &:last-child{
+                margin: 0;
+            }
         }
     }
 }
@@ -276,12 +282,15 @@ hr{
 }
 .tab {
     display: flex;
-    gap: 8px;
     width: 100%;    
     padding: 0 40px;
     margin-bottom: 40px;
     .btn{
         flex: 0 0 calc(25% - 6px);
+        margin-right: 8px;
+        &:last-child{
+            margin: 0;
+        }
     }
 }
 .post {
@@ -438,8 +447,64 @@ hr{
 .btn_head{
     display: none;
 }
-.post__head{
-    display: none;
+.post {
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    &__head-title {
+        display: flex;
+        gap: 16px;
+    }
+    &__head-ava {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+    }
+    &__head-info {}
+    &__head-nick {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: $f700;
+        margin-bottom: 4px;
+    }
+    &__head-verified {
+        width: 16px;
+        height: 16px;
+        margin-left: 8px;
+    }
+    &__head-date {
+        font-size: 12px;
+        line-height: 15px;
+        color: #939AAE;
+    }
+    &__head-action {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+            width: 20px;
+            height: 4px;
+            fill: #939AAE;
+            transition: $transition;
+        }
+        &:hover svg {
+            fill: #7321E8;
+        }
+        &:active, &:focus{
+            svg{
+                fill: #939AAE;
+            }
+        }
+    }
 }
 .post__more{
     display: none;

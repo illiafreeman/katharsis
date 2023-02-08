@@ -36,61 +36,7 @@
     .page{
         border-radius: 16px 16px 0px 0px;
     }
-    .post {
-        &__head {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 15px;
-            margin-bottom: 16px;
-        }
-        &__head-title {
-            display: flex;
-            gap: 16px;
-        }
-        &__head-ava {
-            width: 40px;
-            height: 40px;
-            border-radius: 12px;
-        }
-        &__head-info {}
-        &__head-nick {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            line-height: 20px;
-            font-family: $f700;
-            margin-bottom: 4px;
-        }
-        &__head-verified {
-            width: 16px;
-            height: 16px;
-            margin-left: 8px;
-        }
-        &__head-date {
-            font-size: 12px;
-            line-height: 15px;
-            color: #939AAE;
-        }
-        &__head-action {
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            svg{
-                width: 20px;
-                height: 4px;
-                fill: #939AAE;
-                transition: $transition;
-            }
-            &:hover svg {
-                fill: #7321E8;
-            }
-        }
-    }
+    
     .post__pic {
         border-radius: 0;
     }
@@ -149,7 +95,7 @@
         padding-right: 0;
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
     .container{
         width: 100%;
     }
@@ -186,12 +132,11 @@
         line-height: 22px;
     }
     .user__action {
-        gap: 8px;
         margin: 24px 0 32px;
     }
     .btn{
         height: 40px;
-        padding: 0 18px;
+        padding: 0 12px;
     }
     .tab{
         padding: 0 15px;
@@ -235,5 +180,8 @@
     }
     .modal_btn {
         width: 240px;
+    }
+    .post__head {
+        padding: 0 15px;
     }
 }    
