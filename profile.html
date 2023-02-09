@@ -347,7 +347,15 @@
                         </div>
                     </div>
                     <div class="post__audio">
-                        <audio controls>
+                        <div class="pauseplay">
+                            <svg class="play">
+                                <use xlink:href="img/sprite.svg#icon-pl"></use>
+                            </svg>
+                            <svg class="pause">
+                                <use xlink:href="img/sprite.svg#icon-pa"></use>
+                            </svg>
+                        </div>
+                        <audio class="audio" controls>
                             <source src="./img/mp3.mp3" type="audio/mpeg"/>
                         </audio>
                     </div>

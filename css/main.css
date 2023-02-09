@@ -1021,6 +1021,35 @@ video {
   right: 0;
   width: 100%;
 }
+.post__audio svg {
+  fill: #fff;
+  width: 48px;
+  height: 48px;
+}
+.post__audio .pauseplay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+}
+.post__audio .pauseplay .pause, .post__audio .pauseplay .play {
+  position: absolute;
+}
+.post__audio .pauseplay .pause {
+  opacity: 0;
+  visibility: hidden;
+}
+.post__audio .pauseplay.pause .pause {
+  opacity: 1;
+  visibility: visible;
+}
+.post__audio .pauseplay.pause .play {
+  opacity: 0;
+  visibility: hidden;
+}
 
 @media only screen and (max-width: 1100px) {
   .aside {

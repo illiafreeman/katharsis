@@ -29,6 +29,18 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 1,
     });
+    $(".pauseplay").click(function() {
+        var audio = $(this).closest('.post__audio').find('.audio')[0];
+      
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+          audio.currentTime = 0
+        }
+      
+        $(this).toggleClass('pause');
+    });
 });
 
 

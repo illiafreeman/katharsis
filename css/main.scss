@@ -630,6 +630,37 @@ video {
         right: 0;
         width: 100%;
     }
+    svg{
+        fill: #fff;
+        width: 48px;
+        height: 48px;
+    }
+    .pauseplay{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        width: 48px;
+        height: 48px;
+        .pause, .play{
+            position: absolute;
+        }
+        .pause{
+            opacity: 0;
+            visibility: hidden;
+        }
+        &.pause{
+            .pause{
+                opacity: 1;
+                visibility: visible;
+            }
+            .play{
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
 }
 
 
