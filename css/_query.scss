@@ -1,3 +1,13 @@
+@media only screen and (max-width: 1300px) {
+    .post-wrap{
+        .post-next{
+            right: -60px;
+        }
+        .post-prev{
+            left: -60px;
+        } 
+    }
+}
 @media only screen and (max-width: 1100px) {
     .aside {
         position: fixed;
@@ -130,6 +140,27 @@
     }
     .modal_btn {
         width: 240px;
+    }
+    .post-wrap{
+        .post-next{
+            right: -100px;
+        }
+        .post-prev{
+            left: -100px;
+        } 
+    }
+}
+@media only screen and (max-width: 900px) {
+    .post-wrap{
+        padding: 0 80px;
+    }
+    .post-wrap{
+        .post-next{
+            right: -0px;
+        }
+        .post-prev{
+            left: -0px;
+        } 
     }
 }
 @media only screen and (max-width: 640px) {
