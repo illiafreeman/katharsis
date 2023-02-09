@@ -616,7 +616,21 @@ video {
     border-radius: 16px;
     overflow: hidden;
 }
-
+.post__audio{
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    background: url(../img/microphone.png) center center no-repeat, linear-gradient(41.19deg, #7321E8 9.55%, #EAAAFA 95.15%), #D9D9D9;
+    border-radius: 16px;
+    overflow: hidden;
+    audio{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+}
 
 
 
