@@ -505,7 +505,7 @@ hr{
             }
         }
     }
-}
+ }
 .post__more{
     display: none;
 }
@@ -604,8 +604,18 @@ hr{
         }
     }
 }
-
-
+video {
+    width: auto;
+    max-height: 400px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.post__video{
+    border-radius: 16px;
+    overflow: hidden;
+}
 
 
 

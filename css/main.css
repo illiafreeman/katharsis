@@ -992,6 +992,20 @@ hr {
   background: rgb(255, 255, 255);
 }
 
+video {
+  width: auto;
+  max-height: 400px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.post__video {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 1100px) {
   .aside {
     position: fixed;
