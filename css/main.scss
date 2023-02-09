@@ -98,6 +98,7 @@ hr{
 .container{
     width: 640px;
     margin: 0 auto;
+    padding-top: 40px;
 }
 .page{
     background: url(../img/page_bg.png) left top / 100% no-repeat;
@@ -106,7 +107,6 @@ hr{
     flex-direction: column;
     display: flex;
     align-items: center;
-    padding-top: 40px;
     &__nick {
         padding: 0px 16px;
         height: 40px;
@@ -295,6 +295,7 @@ hr{
 }
 .post {
     margin-bottom: 56px;
+    position: relative;
     &__pic {
         border-radius: 16px;
     }
@@ -369,6 +370,7 @@ hr{
     overflow-x: hidden;
     overflow-y: auto;
     padding-right: 17px;
+    z-index: 1000;
     &.vis{
         opacity: 1;
         visibility: visible;
@@ -386,7 +388,7 @@ hr{
     visibility: hidden;
     overflow-x: hidden;
     overflow-y: auto;
-    //transition: $transition1;
+    z-index: 1000;
     &.vis{
         opacity: 1;
         visibility: visible;
@@ -662,7 +664,49 @@ video {
         }
     }
 }
-
+.post-wrap{
+    position: relative;
+    .post-prev, .post-next{
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        background: #F5F5F7;
+        border-radius: 16px;
+        transition: $transition;
+        transform: translate(0, -50%);
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        left: -132px;
+        svg{
+            fill: #939AAE;
+            width: 24px;
+            height: 24px;
+            transition: $transition;
+        }
+        &:hover{
+            background: #e3e3e3;
+            svg{
+                transform: translateX(-3px);
+            }
+        }
+    }
+    .post-next{
+        left: auto;
+        right: -132px;
+        svg{
+            transform: rotate(180deg);
+        }
+        &:hover{
+            svg{
+                transform: rotate(180deg) translateX(-3px);
+            }
+        }
+    }
+}
 
 
 

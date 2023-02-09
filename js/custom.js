@@ -14,7 +14,7 @@ $(document).ready(function () {
         $('.modal-bg').addClass('vis');
         $('.modal').addClass('vis');
     }
-    $('.btn, .login, .post__btn, .post__all, .user__follow-inner, .post__head-action, .post__all').click(modal);
+    $('.btn, .login, .post__btn, .post__all, .user__follow-inner, .post__head-action, .post__all, .post-prev, .post-next').click(modal);
     $('.post__more').click(function() {
         $(this).parent().addClass('full');
         $(this).remove();
