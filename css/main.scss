@@ -28,6 +28,7 @@
 @import '_help';
 @import '_slick';
 @import '_slick-theme';
+@import '_video';
 html{
     -webkit-tap-highlight-color: transparent;
 }
@@ -707,7 +708,9 @@ video {
         }
     }
 }
-
+.video-js{
+    width: 100%;
+}
 
 
 
