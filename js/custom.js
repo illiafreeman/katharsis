@@ -51,6 +51,15 @@ $(document).ready(function () {
       
         $(this).toggleClass('pause');
     });
+    $(window).scroll(function() {
+		$('video').each(function(){
+			if ($(this).is(":in-viewport( 400 )")) {
+				//$(this)[0].play();
+			} else {
+				$(this)[0].pause();
+			}
+		});
+	});
 
 });
 
