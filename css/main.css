@@ -2856,13 +2856,23 @@ hr {
 .video-js.vjs-has-started .vjs-control-bar {
   display: block;
 }
-.video-js.vjs-has-started .vjs-progress-control {
+.video-js .vjs-progress-control {
   width: auto;
   position: absolute;
   bottom: 5px;
   left: 5px;
   right: 85px;
   height: 80px;
+}
+.video-js .vjs-progress-control .vjs-progress-holder {
+  background: #fff;
+  margin-right: 0 !important;
+}
+.video-js .vjs-progress-control .vjs-load-progress {
+  background: rgb(255, 0, 0);
+}
+.video-js .vjs-load-progress div, .video-js .vjs-play-progress {
+  background: #c681f5;
 }
 .video-js .vjs-volume-panel {
   position: absolute;
@@ -2919,23 +2929,24 @@ hr {
   display: none;
 }
 .video-js .vjs-play-control .vjs-icon-placeholder {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -20px;
-  margin-top: -20px;
+  margin-left: -40px;
+  margin-top: -40px;
+  border-radius: 50%;
+  border: 1px solid #797979;
+  background: rgba(43, 51, 63, 0.7) url(../img/play.svg) 26px center no-repeat !important;
 }
 .video-js .vjs-play-control .vjs-icon-placeholder::before {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 50%;
-  top: 50%;
-  margin-left: -10px;
-  margin-top: -10px;
+  display: none;
+}
+.video-js .vjs-play-control:hover .vjs-icon-placeholder {
+  border-color: #ddd;
+  transition: all 0.2s ease-in-out;
 }
 
 .vjs-tech {
