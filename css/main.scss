@@ -708,10 +708,18 @@ video {
         }
     }
 }
-.video-js{
+.vjs-tech{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
     width: 100%;
 }
-
+.video-js{
+    padding-top: 41.66666666666667%;
+    max-width: 100%;
+    width: 100%;
+}
 
 
 

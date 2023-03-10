@@ -2829,7 +2829,17 @@ video {
   transform: rotate(180deg) translateX(-3px);
 }
 
+.vjs-tech {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .video-js {
+  padding-top: 41.6666666667%;
+  max-width: 100%;
   width: 100%;
 }
 
