@@ -20,10 +20,20 @@ $(document).ready(function () {
         $(this).remove();
     });
 
-    let elem = document.querySelector('.post__all');
-    elem.addEventListener('click', function(event) {
-        event.preventDefault();
-    });
+    // let elem = document.querySelectorAll('.post__all');
+    // console.log(elem);
+    // elem.addEventListener('click', function(event) {
+    //     event.preventDefault();
+    // });
+    document.querySelectorAll('.post__all').forEach(item => {
+        item.addEventListener('click', event => {
+            event.preventDefault();
+        })
+    })
+
+
+
+
     $('.slider').slick({
         dots: true,
         infinite: true,
