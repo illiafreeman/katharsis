@@ -719,10 +719,62 @@ hr{
         margin-top: -40px;
         margin-left: -40px;
         border-radius: 50%;
-        border: 1px solid #fff;
+        border: 1px solid #797979;
         background: rgba(43, 51, 63, 0.7) url(../img/play.svg) 26px center no-repeat !important;
+        &:focus{
+            border-color: #ddd;
+            transition: $transition;
+        }
         span{
             display: none;
+        }
+    }
+    &:hover{
+        .vjs-big-play-button{
+            border-color: #ddd;
+            transition: $transition;
+            
+        }
+    }
+    .vjs-control-bar{
+        height: 100%;
+    }
+    .vjs-time-control, .vjs-fullscreen-control{
+        display: none;
+    }
+    &.vjs-has-started{
+        .vjs-control-bar{
+            display: block;
+            
+        }
+        .vjs-progress-control{
+            width: auto;
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            right: 90px;
+            height: 80px;
+        }
+        
+    } 
+    .vjs-volume-panel{
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        width: 80px;
+        height: 80px;
+        transition: none;
+        .vjs-volume-control{
+            display: none;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            position: absolute !important;
+        }
+        &.vjs-volume-panel-horizontal.vjs-hover{
+            width: 80px;
+            .vjs-mute-control{
+                width: 80px;
+            }
         }
     }
 }
