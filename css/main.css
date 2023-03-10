@@ -3073,7 +3073,7 @@ hr {
   .post {
     margin-bottom: 40px;
   }
-  .post__pic, .slick-list, .post__video {
+  .post__pic, .slick-list, .post__video, .post__audio {
     border-radius: 0;
   }
   .post__action {
