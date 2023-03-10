@@ -41,9 +41,24 @@ $(document).ready(function () {
       
         $(this).toggleClass('pause');
     });
+
 });
 
-
+$(window).on('load', function() {
+    /*$("button").on('mouseenter',function() {	
+        $(this).attr("title","");
+        console.log('qwe');
+    });
+    $("button").focus(function() {	
+        $(this).attr("title","");
+        console.log('qwe');
+    });*/
+    $("button").click(function() {	
+        $(this).removeAttr("type");
+        console.log('as');
+    });
+    
+});
 
 
 

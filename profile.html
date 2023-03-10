@@ -24,7 +24,7 @@
 
 <body class="body">
     <aside class="aside">
-        <a href="#" class="logo"></a>
+        <a href="#" class="logo" title="logo"></a>
         <div class="login">
             <img class="login__icon" src="./img/login.svg" alt="">
             Log in
@@ -90,7 +90,7 @@
                     <div class="btn btn_light btn_light-inactive">Audio</div>
                 </div>
                 <!-- start block for ajax -->
-                <!-- <div class="post">
+                <div class="post">
                     <div class="post__head">
                         <div class="post__head-title">
                             <img class="post__head-ava" src="./img/avatar.jpg" alt="">
@@ -207,8 +207,8 @@
                         <div class="post__more">more</div>
                     </div>
                     <a href="#" class="post__all">See all comments (352)</a>
-                </div> -->
-                <!-- <div class="post">
+                </div>
+                <div class="post">
                     <div class="post__head">
                         <div class="post__head-title">
                             <img class="post__head-ava" src="./img/avatar.jpg" alt="">
@@ -227,7 +227,14 @@
                         </div>
                     </div>
                     <div class="post__video">
-                        <video controls>
+                        <video 
+                            class="video-js"
+                            controls
+                            preload="auto"
+                            poster="./img/poster.jpg2"
+                            muted="muted"
+                            data-setup="{}"
+                        >
                             <source src="./img/mp4.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -267,7 +274,7 @@
                         <div class="post__more">more</div>
                     </div>
                     <a href="#" class="post__all">See all comments (352)</a>
-                </div> -->
+                </div>
 
 
                 <div class="post">
@@ -288,22 +295,9 @@
                             </svg>
                         </div>
                     </div>
+                    
                     <div class="post__video">
                         <video 
-                            id="my-video"
-                            class="video-js"
-                            controls
-                            preload="auto"
-                            poster="./img/poster.jpg2"
-                            muted="muted"
-                            data-setup="{}"
-                        >
-                            <source src="./img/mp4.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="post__video">
-                        <video 
-                            id="my-video"
                             class="video-js"
                             controls
                             preload="auto"
@@ -353,7 +347,7 @@
                 </div>
 
 
-                <!-- <div class="post">
+                <div class="post">
                     <div class="post__head">
                         <div class="post__head-title">
                             <img class="post__head-ava" src="./img/avatar.jpg" alt="">
@@ -420,7 +414,7 @@
                         <div class="post__more">more</div>
                     </div>
                     <a href="#" class="post__all">See all comments (352)</a>
-                </div> -->
+                </div>
                 <!-- end block for ajax -->
                 <div class="ac">
                     <div class="btn btn_center">Load more</div>
