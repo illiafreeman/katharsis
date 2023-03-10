@@ -53,13 +53,27 @@ $(document).ready(function () {
     });
     $(window).scroll(function() {
 		$('video').each(function(){
-			if ($(this).is(":in-viewport( 400 )")) {
+			if ($(this).is(":in-viewport( 0 )")) {
 				//$(this)[0].play();
 			} else {
 				$(this)[0].pause();
 			}
 		});
 	});
+    var videoPlaying = null;
+
+    const onPlay = function() {
+    if (videoPlaying && videoPlaying != this) {
+        videoPlaying.pause()
+    }
+    videoPlaying = this
+    }
+
+    // init event handler
+    const videos = document.getElementsByTagName("video")
+    for (let i = 0; i < videos.length; i++) {
+    videos[i].addEventListener("play", onPlay)
+    } 
 
 });
 
