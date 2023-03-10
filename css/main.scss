@@ -713,6 +713,12 @@ hr{
     max-width: 100%;
     width: 100%;
     height: 0;
+    .vjs-poster{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+
     .vjs-big-play-button{
         width: 80px;
         height: 80px;
