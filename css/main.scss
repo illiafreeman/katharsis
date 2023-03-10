@@ -691,23 +691,34 @@ hr{
                 clip: auto;
                 position: static;
                 height: 12px;
+                font-family: $f450;
                 & + span{
                     padding: 0 5px;
                     height: 12px;
+                    font-family: $f450;
                 }
             }
             .vjs-remaining-time-display{
                 height: 12px;
+                font-family: $f450;
             }
         }
         .vjs-current-time{
             display: flex;
             position: absolute;
-            bottom: 20px;
-            left: 20px;
+            bottom: 24px;
+            left: 24px;
             padding: 0;
             width: 80px;
             height: 80px;
+            align-items: flex-end;
+            padding: 16px 8px 8px;
+            .vjs-current-time-display{
+                font-size: 12px;
+                height: 12px;
+                line-height: 12px;
+                font-family: $f450;
+            }
         }
         .vjs-volume-panel{
             display: none;
