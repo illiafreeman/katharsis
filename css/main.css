@@ -2848,6 +2848,7 @@ hr {
 }
 .video-js .vjs-control-bar {
   height: 100%;
+  background: transparent;
 }
 .video-js .vjs-time-control, .video-js .vjs-fullscreen-control {
   display: none;
@@ -2860,7 +2861,7 @@ hr {
   position: absolute;
   bottom: 5px;
   left: 5px;
-  right: 90px;
+  right: 85px;
   height: 80px;
 }
 .video-js .vjs-volume-panel {
@@ -2877,11 +2878,64 @@ hr {
   visibility: hidden !important;
   position: absolute !important;
 }
+.video-js .vjs-volume-panel .vjs-mute-control {
+  width: 80px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-js .vjs-volume-panel .vjs-mute-control .vjs-icon-placeholder {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: relative;
+}
+.video-js .vjs-volume-panel .vjs-mute-control .vjs-icon-placeholder::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  margin-left: -10px;
+  margin-top: -16px;
+}
 .video-js .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-hover {
-  width: 80px;
+  width: 80px !important;
 }
 .video-js .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-hover .vjs-mute-control {
-  width: 80px;
+  width: 80px !important;
+}
+.video-js .vjs-play-control {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-js .vjs-play-control.vjs-playing {
+  opacity: 0;
+}
+.video-js .vjs-play-control .vjs-control-text {
+  display: none;
+}
+.video-js .vjs-play-control .vjs-icon-placeholder {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+.video-js .vjs-play-control .vjs-icon-placeholder::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
 }
 
 .vjs-tech {
