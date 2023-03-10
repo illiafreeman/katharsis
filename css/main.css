@@ -3006,7 +3006,7 @@ hr {
   .post {
     margin-bottom: 40px;
   }
-  .post__pic {
+  .post__pic, .slick-list, .post__video {
     border-radius: 0;
   }
   .post__action {
