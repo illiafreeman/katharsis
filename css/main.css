@@ -2735,25 +2735,13 @@ hr {
 
 .post__audio {
   width: 100%;
-  padding-top: 100%;
   position: relative;
   background: url(../img/microphone.png) center center no-repeat, linear-gradient(41.19deg, #7321E8 9.55%, #EAAAFA 95.15%), #D9D9D9;
   border-radius: 16px;
   overflow: hidden;
 }
-.post__audio audio {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-}
-.post__audio svg {
-  fill: #fff;
-  width: 48px;
-  height: 48px;
-}
 .post__audio .pauseplay {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2776,6 +2764,69 @@ hr {
 .post__audio .pauseplay.pause .play {
   opacity: 0;
   visibility: hidden;
+}
+.post__audio .video-js {
+  padding-top: 100%;
+  background: url(../img/microphone.png) center center no-repeat, linear-gradient(41.19deg, #7321E8 9.55%, #EAAAFA 95.15%), #D9D9D9;
+}
+.post__audio .video-js .vjs-control-bar {
+  display: block;
+}
+.post__audio .video-js .vjs-remaining-time {
+  display: flex;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  padding: 0;
+  width: 180px;
+  height: 80px;
+  font-size: 12px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  line-height: 12px;
+  padding: 16px 8px 8px;
+}
+.post__audio .video-js .vjs-remaining-time .vjs-control-text {
+  width: auto;
+  overflow: visible;
+  clip: auto;
+  position: static;
+  height: 12px;
+}
+.post__audio .video-js .vjs-remaining-time .vjs-control-text + span {
+  padding: 0 5px;
+  height: 12px;
+}
+.post__audio .video-js .vjs-remaining-time .vjs-remaining-time-display {
+  height: 12px;
+}
+.post__audio .video-js .vjs-current-time {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+}
+.post__audio .video-js .vjs-volume-panel {
+  display: none;
+}
+.post__audio .video-js .vjs-progress-control {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  height: 50px;
+  background: rgba(25, 31, 50, 0.2);
+  border-radius: 16px;
+  align-items: flex-start;
+  padding-top: 16px;
+}
+.post__audio .video-js .vjs-progress-control .vjs-progress-holder {
+  margin: 0 8px !important;
 }
 
 .post-wrap {
