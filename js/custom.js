@@ -72,15 +72,6 @@ $(document).ready(function () {
     videos[i].addEventListener("play", onPlay)
     } 
 
-    $(window).scroll(function() {
-		$('audio').each(function(){
-			if ($(this).is(":in-viewport( 0 )")) {
-				//$(this)[0].play();
-			} else {
-				$(this)[0].pause();
-			}
-		});
-	});
 
     var audioPlaying = null;
     const onPlayAudio = function() {
