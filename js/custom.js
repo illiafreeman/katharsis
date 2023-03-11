@@ -31,14 +31,12 @@ $(document).ready(function () {
         })
     })
 
-
-
-
     $('.slider').slick({
         dots: true,
         infinite: true,
         slidesToShow: 1,
     });
+
     $(".pauseplay").click(function() {
         var audio = $(this).closest('.post__audio').find('.audio')[0];
       
@@ -51,6 +49,7 @@ $(document).ready(function () {
       
         $(this).toggleClass('pause');
     });
+
     $(window).scroll(function() {
 		$('video').each(function(){
 			if ($(this).is(":in-viewport( 0 )")) {
@@ -60,19 +59,39 @@ $(document).ready(function () {
 			}
 		});
 	});
-    var videoPlaying = null;
 
+    var videoPlaying = null;
     const onPlay = function() {
     if (videoPlaying && videoPlaying != this) {
         videoPlaying.pause()
     }
     videoPlaying = this
     }
-
-    // init event handler
     const videos = document.getElementsByTagName("video")
     for (let i = 0; i < videos.length; i++) {
     videos[i].addEventListener("play", onPlay)
+    } 
+
+    $(window).scroll(function() {
+		$('audio').each(function(){
+			if ($(this).is(":in-viewport( 0 )")) {
+				//$(this)[0].play();
+			} else {
+				$(this)[0].pause();
+			}
+		});
+	});
+
+    var audioPlaying = null;
+    const onPlayAudio = function() {
+    if (audioPlaying && audioPlaying != this) {
+        audioPlaying.pause()
+    }
+    audioPlaying = this
+    }
+    const audios = document.getElementsByTagName("audio")
+    for (let i = 0; i < audios.length; i++) {
+        audios[i].addEventListener("play", onPlayAudio)
     } 
 
 });
