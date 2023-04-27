@@ -691,10 +691,12 @@ hr{
                 position: static;
                 height: 12px;
                 font-family: $f450;
+                display: none;
                 & + span{
                     padding: 0 5px;
                     height: 12px;
                     font-family: $f450;
+                    display: none;
                 }
             }
             .vjs-remaining-time-display{

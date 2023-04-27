@@ -2791,11 +2791,13 @@ hr {
   position: static;
   height: 12px;
   font-family: "medium", sans-serif;
+  display: none;
 }
 .post__audio .video-js .vjs-remaining-time .vjs-control-text + span {
   padding: 0 5px;
   height: 12px;
   font-family: "medium", sans-serif;
+  display: none;
 }
 .post__audio .video-js .vjs-remaining-time .vjs-remaining-time-display {
   height: 12px;
