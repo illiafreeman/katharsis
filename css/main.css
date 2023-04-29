@@ -2224,6 +2224,7 @@ hr {
 
 .page {
   background: url(../img/page_bg.png) left top/100% no-repeat;
+  min-height: calc(100vh - 80px);
 }
 
 .user {
@@ -3024,24 +3025,32 @@ hr {
   width: 100%;
 }
 
-.user__private {
+.window {
   background: #F5F5F7;
   border-radius: 32px;
   padding: 32px;
   text-align: center;
-  margin-top: 24px;
+  width: 300px;
+  margin: 24px auto 0;
 }
-.user__private-title {
+.window-title {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 16px;
   font-family: "demi", sans-serif;
 }
-.user__private-desc {
+.window-desc {
   width: 240px;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 24px;
+  margin: 0;
+}
+.window .btn {
+  margin-top: 24px;
+}
+.window-icon {
+  width: 40px;
+  margin: 0 auto 20px;
 }
 
 @media only screen and (max-width: 1300px) {
