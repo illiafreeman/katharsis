@@ -2586,8 +2586,23 @@ hr {
 .post__head-ava {
   width: 40px;
   height: 40px;
-  border-radius: 12px;
   margin-right: 16px;
+  position: relative;
+}
+.post__head-ava_online:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  bottom: -3px;
+  right: -3px;
+  background: #27D34C;
+}
+.post__head-pic {
+  border-radius: 12px;
 }
 .post__head-nick {
   display: flex;
