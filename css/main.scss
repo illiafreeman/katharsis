@@ -457,6 +457,11 @@ hr{
         justify-content: space-between;
         align-items: center;
         margin-bottom: 16px;
+        &_single{
+            background: #fff;
+            padding: 5px;
+            border-radius: 12px;
+        }
     }
     &__head-title {
         display: flex;

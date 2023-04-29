@@ -2580,6 +2580,11 @@ hr {
   align-items: center;
   margin-bottom: 16px;
 }
+.post__head_single {
+  background: #fff;
+  padding: 5px;
+  border-radius: 12px;
+}
 .post__head-title {
   display: flex;
 }
@@ -3223,6 +3228,10 @@ hr {
   }
   .post-wrap .post-prev {
     left: 0px;
+  }
+  .post__head_single {
+    margin: 0 10px 16px;
+    padding: 5px !important;
   }
 }
 @media only screen and (max-width: 640px) {
