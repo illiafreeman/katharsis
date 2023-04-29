@@ -35,6 +35,16 @@ $(document).ready(function () {
         dots: true,
         infinite: true,
         slidesToShow: 1,
+        prevArrow: `<button class="slick-prev" aria-label="Previous" type="button">
+                                <svg>
+                                    <use xlink:href="./img/sprite.svg#icon-ar"></use>
+                                </svg>
+                            </button>`,
+                nextArrow: `<button class="slick-next" aria-label="Next" type="button">
+                                <svg>
+                                    <use xlink:href="./img/sprite.svg#icon-ar"></use>
+                                </svg>
+                            </button>`,
     });
 
     $(".pauseplay").click(function() {
