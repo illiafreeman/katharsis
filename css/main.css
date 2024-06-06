@@ -2537,7 +2537,7 @@ hr {
 }
 .modal__logo {
   display: block;
-  background: url(../img/logo_color.png) center center no-repeat;
+  background: url(../img/logo_color.png) center center/contain no-repeat;
   width: 218px;
   height: 48px;
   margin: 0 auto 32px;
@@ -3192,9 +3192,9 @@ hr {
     right: 16px;
   }
   .modal__logo {
-    background: url(../img/logo_min_modal.png) center center no-repeat;
+    background: url(../img/logo_color.png) center center/contain no-repeat;
     width: 154px;
-    height: 24px;
+    height: 40px;
     margin: 0 auto 24px;
   }
   .modal__desc {
