@@ -3074,6 +3074,7 @@ hr {
 }
 .window_big {
   width: 600px;
+  max-width: 90%;
   text-align: left;
 }
 .window_big h3, .window_big h4 {
