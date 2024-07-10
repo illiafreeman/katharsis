@@ -986,6 +986,14 @@ hr{
         width: 40px;
         margin: 0 auto 20px;
     }
+    &_big{
+        width: 600px;
+        text-align: left;
+        h3{
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+    }
 }
 
 

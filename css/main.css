@@ -3072,6 +3072,14 @@ hr {
   width: 40px;
   margin: 0 auto 20px;
 }
+.window_big {
+  width: 600px;
+  text-align: left;
+}
+.window_big h3 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
 
 @media only screen and (max-width: 1300px) {
   .post-wrap .post-next {
