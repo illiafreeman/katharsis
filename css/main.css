@@ -3076,9 +3076,15 @@ hr {
   width: 600px;
   text-align: left;
 }
-.window_big h3 {
-  margin-bottom: 20px;
+.window_big h3, .window_big h4 {
+  margin: 20px 0;
   font-weight: 700;
+}
+.window_big li {
+  margin: 20px 0;
+}
+.window_big b {
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 1300px) {
