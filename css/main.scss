@@ -987,7 +987,7 @@ hr{
         margin: 0 auto 20px;
     }
     &_big{
-        width: 600px;
+        width: 90%;
         max-width: 90%;
         text-align: left;
         h3, h4{
@@ -1002,7 +1002,11 @@ hr{
         }
     }
 }
+.container_content{
+    width: 90%;
 
+
+}
 
 
 

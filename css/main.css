@@ -3073,7 +3073,7 @@ hr {
   margin: 0 auto 20px;
 }
 .window_big {
-  width: 600px;
+  width: 90%;
   max-width: 90%;
   text-align: left;
 }
@@ -3086,6 +3086,10 @@ hr {
 }
 .window_big b {
   font-weight: 500;
+}
+
+.container_content {
+  width: 90%;
 }
 
 @media only screen and (max-width: 1300px) {
