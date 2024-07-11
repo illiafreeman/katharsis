@@ -3082,7 +3082,7 @@ hr {
   font-weight: 700;
 }
 .window_big li {
-  margin: 20px 0;
+  margin: 20px 0 !important;
 }
 .window_big b {
   font-weight: 500;
