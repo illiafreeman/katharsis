@@ -1008,7 +1008,22 @@ hr{
 
 }
 
+.listing {
+    list-style: disc;
 
+    li {
+        margin-left: 40px !important;
+    }
+
+    li::marker {
+        color: #7321E8;
+    }
+}
+
+.window_big a {
+    color: #7321E8;
+    border-bottom: 1px dashed #7321E8;
+}
 
 
 

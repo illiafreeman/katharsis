@@ -3092,6 +3092,21 @@ hr {
   width: 90%;
 }
 
+.listing {
+  list-style: disc;
+}
+.listing li {
+  margin-left: 40px !important;
+}
+.listing li::marker {
+  color: #7321E8;
+}
+
+.window_big a {
+  color: #7321E8;
+  border-bottom: 1px dashed #7321E8;
+}
+
 @media only screen and (max-width: 1300px) {
   .post-wrap .post-next {
     right: -60px;
